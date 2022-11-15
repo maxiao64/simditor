@@ -1,6 +1,6 @@
 <?php
 
-namespace Jxlwqq\Simditor;
+namespace MaXiao\Simditor;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Form;

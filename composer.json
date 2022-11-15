@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Jxlwqq\\Simditor\\": "src/"
+            "MaXiao\\Simditor\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jxlwqq\\Simditor\\SimditorServiceProvider"
+                "MaXiao\\Simditor\\SimditorServiceProvider"
             ]
 
         }

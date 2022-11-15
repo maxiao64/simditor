@@ -9,7 +9,7 @@ This is a `laravel-admin` extension that integrates [Simditor](https://github.co
 ## Installation
 
 ```bash
-composer require jxlwqq/simditor
+composer require MaXiao/simditor
 
 php artisan vendor:publish --tag=laravel-admin-simditor
 ```
@@ -54,7 +54,7 @@ $form->simditor('content');
 
 ## More resources
 
-[Awesome Laravel-admin](https://github.com/jxlwqq/awesome-laravel-admin)
+[Awesome Laravel-admin](https://github.com/MaXiao/awesome-laravel-admin)
 
 License
 ------------
