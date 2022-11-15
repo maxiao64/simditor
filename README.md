@@ -4,7 +4,7 @@
 This is a `laravel-admin` extension that integrates [Simditor](https://github.com/mycolorway/simditor) for qiniu upload image function into the `laravel-admin` form.
 ## Screenshot
 
-<img alt="simditor" src="https://user-images.githubusercontent.com/2421068/45915071-0e9c8f00-be81-11e8-94b5-8094113b71f1.png">
+<img alt="simditor" src="https://raw.githubusercontent.com/maxiao64/simditor/master/review.jpg">
 
 ## Installation
 
