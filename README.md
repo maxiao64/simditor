@@ -1,7 +1,7 @@
-# Simditor extension for laravel-admin
+# Simditor-upload-qiniu extension for laravel-admin
 
 
-This is a `laravel-admin` extension that integrates [Simditor](https://github.com/mycolorway/simditor) into the `laravel-admin` form.
+This is a `laravel-admin` extension that integrates [Simditor](https://github.com/mycolorway/simditor) for qiniu upload image function into the `laravel-admin` form.
 ## Screenshot
 
 <img alt="simditor" src="https://user-images.githubusercontent.com/2421068/45915071-0e9c8f00-be81-11e8-94b5-8094113b71f1.png">
@@ -25,12 +25,12 @@ In the `extensions` section of the `config/admin.php` file, add some configurati
         'enable' => true,
         // Editor configuration
         'config' => [
-            'upload' => [
-                'url' => '/admin/api/upload', # example api route: admin/api/upload
-                'fileKey' => 'upload_file',
-                'connectionCount' => 3,
-                'leaveConfirm' => 'Uploading is in progress, are you sure to leave this page?'
-            ],
+             'upload' => [
+                    'qnTokenUrl' => '/' . env('ADMIN_ROUTE_PREFIX') . '/api/getQnToken', // 获取七牛配置项的接口
+                    'fileKey' => 'upload_file',
+                    'connectionCount' => 3,
+                    'leaveConfirm' => 'Uploading is in progress, are you sure to leave this page?'
+                ],
             'tabIndent' => true,
             'toolbar' => ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment'],
             'toolbarFloat' => true,
@@ -51,10 +51,6 @@ Use it in the form form:
 ```php
 $form->simditor('content');
 ```
-
-## More resources
-
-[Awesome Laravel-admin](https://github.com/MaXiao/awesome-laravel-admin)
 
 License
 ------------
