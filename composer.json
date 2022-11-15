@@ -1,14 +1,14 @@
 {
-    "name": "jxlwqq/simditor",
+    "name": "maxiao64/simditor",
     "description": "Simditor for Laravel-admin",
     "type": "library",
-    "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/jxlwqq/simditor",
+    "keywords": ["laravel-admin", "extension", "qiniu"],
+    "homepage": "https://github.com/maxiao64/simditor",
     "license": "MIT",
     "authors": [
         {
-            "name": "jxlwqq",
-            "email": "jxlwqq@gmail.com"
+            "name": "maxiao",
+            "email": "1156381157@qq.com"
         }
     ],
     "require": {
